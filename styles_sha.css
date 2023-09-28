@@ -1,0 +1,189 @@
+/*HTML=================================*/
+html {
+	background-image: url(keyboard.jpg);
+	color: whitesmoke;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+nav, h1, h2 {
+	font-family: 'Press Start 2P', cursive;
+}
+
+/*Header===============================*/
+img {
+	display: block;
+	width: 100%;
+}
+
+nav {
+	width: 100%;
+}
+nav ul {
+	padding-left: 0;
+	padding-bottom: 1%;
+	margin-right: 2%;
+	margin-left: 2%;
+}
+
+nav li {
+	display: block;
+	float:left;
+	border: 1px solid black;
+	width: 16.4%;
+	list-style-type: none;
+}
+nav a {
+	display:block;
+	text-align:center;
+	text-decoration: none;
+	color: whitesmoke;
+	border-radius: 10px;
+	background-color: red;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+nav ul li a:hover, nav ul li a:active {
+	color: #27187E;
+	box-shadow: 0 0 5px #27187E, 0 0 25px #27187E, 0 0 50px #27187E, 0 0 200px #27187E;
+}
+
+
+/*Body=================================*/
+body {
+	background-color: black;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Aside================================*/
+aside#leftColumn {
+	clear: both;
+	float: left;
+	width: 45%;
+	margin-top: 3%;
+	margin-right: 2.5%;
+	margin-left: 2.5%;
+}
+
+div#center {
+	display: block;
+	float: right;
+	width: 40%;
+}
+
+aside#rightColumn {
+	clear: both;
+	float: left;
+	width: 45%;
+	margin-right: 2.5%;
+	margin-left: 2.5%;
+}
+
+/*Section==============================*/
+section#walking img {
+	float: left;
+	width: 30%;
+	margin-top: 3%;
+	margin-left: 6%;
+	border: 1px solid red;
+	border-radius: 10px;
+}
+section#bottom img {
+	float: left;
+	width: 30%;
+	margin-top: 2%;
+	margin-left: 6%;
+	margin-bottom: 2%;
+	border: 1px solid red;
+	border-radius: 10px;
+}
+
+
+/*Footer===============================*/
+footer {
+	clear: both;
+	text-align: center;
+	font-variant: small-caps;
+}
+
+
+
+/* ======================================
+Mobile Styles
+   ==================================== */
+   @media only screen and (max-width: 450px) {
+   	nav li {
+   		border: 1px solid black;
+   		width: 100%;
+   		list-style-type: none;
+   	}
+   	aside#leftColumn {
+   		clear: both;
+   		width: 100%;
+   		margin-right: 2.5%;
+   		margin-left: 2.5%;
+   	}
+   	div#center {
+   		width: 100%;
+   	}
+
+   	aside#rightColumn {
+   		width: 100%;
+   		margin-right: 2.5%;
+   		margin-left: 2.5%;
+   	}
+   	section#walking img {
+   		width: 100%;
+   		margin-left: auto;
+   		margin-right: auto;
+   	}
+   	section#bottom img {
+   		width: 100%;
+   		margin-left: auto;
+   		margin-right: auto;
+   	}
+}
+
+
+/* ======================================
+Tablet Styles
+   ==================================== */
+@media only screen and (min-width: 451px) and (max-width: 990px) {
+	nav {
+		width: 100%;
+	}
+	nav ul {
+		padding-left: 0;
+		padding-bottom: 1%;
+	}
+
+	nav li {
+		display: block;
+		float:left;
+		border: 1px solid black;
+		width: 32.6%;
+		list-style-type: none;
+	}
+	nav a {
+		display:block;
+		text-align:center;
+		text-decoration: none;
+		color: whitesmoke;
+		border-radius: 10px;
+		background-color: red;
+	}
+	aside#leftColumn {
+		clear: both;
+		width: 95%;
+	}
+	section#walking img {
+		width: 60%;
+	}
+	aside#rightColumn {
+		width: 95%;
+	}
+	section#bottom img {
+		width: 60%;
+	}
+}
